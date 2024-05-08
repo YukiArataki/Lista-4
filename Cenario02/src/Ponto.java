@@ -3,7 +3,8 @@ public class Ponto {
     private double x;
     private double y;
 
-    public Ponto() {
+    public Ponto() { 
+        
         this.x = 0;
         this.y = 0;
     }
