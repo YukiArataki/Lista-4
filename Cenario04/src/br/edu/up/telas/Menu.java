@@ -22,7 +22,7 @@ public class Menu {
         
         switch(opcao){
             case 1:
-                leitor.showMessageDialog(null,leitor.visualizarMapa(),"CIC Park",leitor.QUESTION_MESSAGE);
+                leitor.nextInt()(null,leitor.next(),"CIC Park",leitor.nextInt());
                 break;
 
             case 2:
@@ -30,11 +30,11 @@ public class Menu {
                 break;
 
             case 3:
-                Saida();
+                liberarVaga();
                 break;
 
             case 4:
-                leitor.showMessageDialog(null, leitor.exibirRelatorio());
+                leitor.nextI(null, leitor.next());
                 break;
 
             case 5:

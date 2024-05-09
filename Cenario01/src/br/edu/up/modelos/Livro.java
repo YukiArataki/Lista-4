@@ -5,10 +5,10 @@ public class Livro {
     private String codigo, titulo, autor, isbn;
     private int ano;
 
-    public Livro (String codigoLivro, String tituloLivro, String autores, int ano){
+    public Livro (String codigoLivro, String tituloLivro, String autor, int ano){
         this.codigo = codigoLivro;
         this.titulo = tituloLivro;
-        this.autor = autores;
+        this.autor = autor;
         this.ano = ano;
     }
 
