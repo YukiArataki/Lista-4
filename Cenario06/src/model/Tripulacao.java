@@ -10,4 +10,4 @@ public class Tripulacao extends Pessoa {
         this.matriculaFuncionario = matriculaFuncionario;
     }
 
-}
+} 

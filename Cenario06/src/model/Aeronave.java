@@ -10,5 +10,5 @@ public class Aeronave {
         this.tipo = tipo;
         this.quantidadeAssentos = quantidadeAssentos;
     }
-
+ 
 }
