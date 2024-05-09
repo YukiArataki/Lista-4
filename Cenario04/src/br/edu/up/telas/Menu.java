@@ -15,14 +15,12 @@ public class Menu {
         msgMenu += "3 - Saída de veículos\n";
         msgMenu += "4 - Relatório\n";
         msgMenu += "5 - Sair\n";
-       
-        do{
         
         opcao = leitor.nextInt();
         
         switch(opcao){
             case 1:
-                leitor.nextInt()(null,leitor.next(),"CIC Park",leitor.nextInt());
+                System.out.prinln("CIC Park");
                 break;
 
             case 2:
@@ -30,41 +28,40 @@ public class Menu {
                 break;
 
             case 3:
-                liberarVaga();
+                liberarVeiculo();
                 break;
 
             case 4:
-                leitor.nextI(null, leitor.next());
+                leitor.nextInt(leitor.nextInt());
                 break;
 
             case 5:
                 break;
                 
             default:
-                JOptionPane.showMessageDialog(null, "Opção Inválida!","Estacionamento",leitor.WARNING_MESSAGE); 
+                System.out.println("Opção Inválida!","Estacionamento"); 
         }
         
-        }while(opcao!=5);
+        }
     }  
     public static void registrarVeiculo(){
         int tmpTipo, numVaga;
-        int vagas = Integer.parseInt(leitor.showInputDialog("Qual  a quantidade de vagas"));
+        int vagas = Integer.parseInt(leitor.nextInt("Qual  a quantidade de vagas"));
         Estacionamento a[] = new Estacionamento[vagas];
         String c="";
 
         for(int i=0;i<vagas;i++) {
             a[i]= new Estacionamento();
-            String marca = leitor.showInputDialog("Qual a marca do carro: "+i);
-            String modelo = leitor.showInputDialog("Qual o modelo do carro: "+i);
-            String placa = leitor.showInputDialog("Qual a placa do carro: "+i);
-            float entrada = Float.parseFloat(leitor.showInputDialog("Qual  a hora de entrada do carro "+i));
-            float saida = Float.parseFloat(leitor.showInputDialog("Qual  a hora de saida do carro "+i));
+            String marca = leitor.nextInt("Qual a marca do carro: "+i);
+            String modelo = leitor.nextInt("Qual o modelo do carro: "+i);
+            String placa = leitor.nextInt("Qual a placa do carro: "+i);
+            float entrada = Float.parseFloat(leitor.nextInt("Qual  a hora de entrada do carro "+i));
+            float saida = Float.parseFloat(leitor.nextInt("Qual  a hora de saida do carro "+i));
             c = a[i].Criarcarro(marca, modelo, placa, entrada,saida);
         }
 
         for(int i=0;i<vagas;i++) {
-            leitor.showMessageDialog(null," O "+(i+1)+ " Carro é: " +c +"\n"+" A entrada foi as: "+a[i].getEntrada() +" horas "+ "\n" + " A hora de saida foi: "+a[i].getSaida()+ "horas"+"\n" +" O preço foi: R$:"+ a[i].getPreco() +"\n");
+            leitor.nextInt(null," O "+(i+1)+ " Carro é: " +c +"\n"+" A entrada foi as: "+a[i].getEntrada() +" horas "+ "\n" + " A hora de saida foi: "+a[i].getSaida()+ "horas"+"\n" +" O preço foi: R$:"+ a[i].getPreco() +"\n");
         }
     }
 
-    }
