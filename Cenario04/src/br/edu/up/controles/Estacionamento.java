@@ -18,7 +18,7 @@ public class Estacionamento {
 
     public float getPreco() {
         if(saida-entrada<=4) {
-            preco = (float) ((saida-entrada)*5);
+            preco = (float) ((saida-entrada)*4.8);
             return preco;
         }
 
