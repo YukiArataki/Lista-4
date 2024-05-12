@@ -23,7 +23,7 @@ public class AgendaController {
         } else {
             System.out.println("Índice inválido.");
         }
-    }
+    } 
 
     public Contato obterContato(int indice) {
         if (indice >= 0 && indice < contatos.size()) {
