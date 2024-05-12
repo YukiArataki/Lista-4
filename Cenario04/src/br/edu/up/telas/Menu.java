@@ -43,7 +43,7 @@ public class Menu {
         for(int i=0;i<vagas;i++) {
             a[i]= new Estacionamento();
             System.out.println("Qual a cor do carro: "+i);
-            String marca = leitor.next();
+            String cor = leitor.next();
 
             System.out.println("Qual o modelo do carro: "+i);
             String modelo = leitor.next();
@@ -56,7 +56,7 @@ public class Menu {
 
             System.out.println("Qual  a hora de saida do carro "+i);
             float saida = leitor.nextFloat();
-            c = a[i].Criarcarro(marca, modelo, placa, entrada,saida);
+            c = a[i].Criarcarro(cor, modelo, placa, entrada, saida);
         }
 
         for(int i=0;i<vagas;i++) {
