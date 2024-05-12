@@ -13,4 +13,27 @@ public class Passagem {
         this.dataVoo = dataVoo;
     }
 
+    public int getNumeroAssento() {
+        return numeroAssento;
+    }
+
+    public void setNumeroAssento(int numeroAssento) {
+        this.numeroAssento = numeroAssento;
+    }
+
+    public String getClasseAssento() {
+        return classeAssento;
+    }
+
+    public void setClasseAssento(String classeAssento) {
+        this.classeAssento = classeAssento;
+    }
+
+    public Date getDataVoo() {
+        return dataVoo;
+    }
+
+    public void setDataVoo(Date dataVoo) {
+        this.dataVoo = dataVoo;
+    }
 }

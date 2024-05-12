@@ -8,4 +8,11 @@ public class Comissario extends Tripulacao {
         this.idiomasFluencia = idiomasFluencia;
     }
 
+    public String[] getIdiomasFluencia() {
+        return idiomasFluencia;
+    }
+
+    public void setIdiomasFluencia(String[] idiomasFluencia) {
+        this.idiomasFluencia = idiomasFluencia;
+    }
 }

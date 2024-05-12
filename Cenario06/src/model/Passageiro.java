@@ -10,4 +10,19 @@ public class Passageiro extends Pessoa {
         this.passagem = passagem;
     }
 
+    public String getIdentificadorBagagem() {
+        return identificadorBagagem;
+    }
+
+    public void setIdentificadorBagagem(String identificadorBagagem) {
+        this.identificadorBagagem = identificadorBagagem;
+    }
+
+    public Passagem getPassagem() {
+        return passagem;
+    }
+
+    public void setPassagem(Passagem passagem) {
+        this.passagem = passagem;
+    }
 }

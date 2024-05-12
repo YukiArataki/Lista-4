@@ -10,5 +10,16 @@ public class Aeronave {
         this.tipo = tipo;
         this.quantidadeAssentos = quantidadeAssentos;
     }
- 
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public int getQuantidadeAssentos() {
+        return quantidadeAssentos;
+    }
 }

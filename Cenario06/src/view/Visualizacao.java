@@ -4,12 +4,13 @@ import controller.Controlador;
 import model.Aeronave;
 import model.Passageiro;
 import model.Passagem;
-import model.Tripulacao;
+import model.Tripulacao; 
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
+
 
 public class Visualizacao {
     private Controlador controlador;
