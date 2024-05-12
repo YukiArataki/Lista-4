@@ -1,10 +1,8 @@
 package view;
 
 import controller.Controlador;
-import model.Aeronave;
 import model.Passageiro;
 import model.Passagem;
-import model.Tripulacao; 
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
