@@ -1,10 +1,10 @@
-package controller;
-
-import model.Aeronave;
-import model.Passageiro;
-import model.Tripulacao;
+package br.edu.up.controller;
 
 import java.util.ArrayList;
+
+import br.edu.up.model.Aeronave;
+import br.edu.up.model.Passageiro;
+import br.edu.up.model.Tripulacao;
 
 public class Controlador {
     private ArrayList<Passageiro> passageiros;

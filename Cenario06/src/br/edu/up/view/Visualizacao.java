@@ -1,13 +1,13 @@
-package view;
-
-import controller.Controlador;
-import model.Passageiro;
-import model.Passagem;
+package br.edu.up.view;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
+
+import br.edu.up.controller.Controlador;
+import br.edu.up.model.Passageiro;
+import br.edu.up.model.Passagem;
 
 
 public class Visualizacao {
