@@ -1,6 +1,6 @@
 package br.edu.up.modelos;
 
-public class ClientePessoa {
+public class ClientePessoa extends Cliente{
 
     private String CPF;
     private Double peso;
