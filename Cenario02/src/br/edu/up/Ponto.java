@@ -1,3 +1,5 @@
+
+
 public class Ponto {
     
     private double x;
