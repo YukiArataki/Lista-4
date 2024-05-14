@@ -3,9 +3,7 @@ import java.util.Scanner;
 import br.edu.up.controle.Dado;
 
 public class Menu {
-    private static Scanner scanner = new Scanner(System.in);
-
-    public static void main(String[] args) {
+     Scanner leitor = new Scanner(System.in);
         int opcao;
         do{
             exibirMenu();
@@ -14,54 +12,66 @@ public class Menu {
 
             switc(opcao){
                 case 1:
-                incluirClientePessoa();
+                incluirClientePessoaEmpressa();
                 break;
                 case 2:
-                incluirClienteEmpresa();
+                mostrarDadosClientePessoaEmpressa();
                 break;
                 case 3:
-                mostrarDadosClientePessoa()
+                emprestrarParaClientePessoaEmpressa()
                 break;
                 case 4:
-                mostrarDadosClienteEmpressa();
+                devolucaoDeClientePessoaEmpressa();
                 break;
                 case 5:
-                emprestrarParaClientePessoa();
-                break;
-                case 6:
-                emprestrarParaClienteEmpressa();
-                break;
-                case 7:
-                devolucaoDeClientePessoa();
-                break;
-                case 8:
-                devolucaoDeClienteEmpressa();
-                break;
-                case 9:
                 System.out.println("Saindo...");
                 break;
                 default:
                 System.out.println("Opcao inválida. Tente novamente.");
                 break;
             }
-        }while(opcao =! 9);
+        }while(opcao =! 5);
     }
 
     private static void exibirMenu() {
         System.out.println("\nMenu:");
-        System.out.println("1. Incluir cliente pessoa");
-        System.out.println("2. Incluir cliente empresa");
-        System.out.println("3. Mostrar dados cliente pessoa");
-        System.out.println("4. Mostrar dados cliente empressa");
-        System.out.println("5. Emprestrar para cliente pessoa");
-        System.out.println("6. Emprestrar para cliente empressa")
-        System.out.println("7. Devolução de cliente pessoa");
-        System.out.println("8. Devolução de cliente empressa");
-        System.out.println("9. Sair");
+        System.out.println("1. Incluir cliente pessoa/empresa");
+        System.out.println("2. Mostrar dados cliente pessoa/empresa");
+        System.out.println("3. Emprestrar para cliente pessoa/empresa");
+        System.out.println("4. Devolução de cliente pessoa/empresa");
+        System.out.println("5. Sair");
         System.out.print("Escolha uma opção: ");
     }
 
     private static void incluirClientePessoa() {
-        
+        System.out.println("Tipo de cliente: ");
+        System.out.println("1. cliente pessoa");
+        System.out.println("2. cliente empressa");
+        int tipo = scanner.nextInt();
+        scanner.nextLine(); 
     }
-}
+
+    System.out.print("Nome do cliente pessoa/empressa: ");
+    String nome = leitor.nextLine();
+
+    if (tipo == 1){
+    System.out.println("Qual o CPF do cliente?");
+    string cpf = leitor.nextString();
+    System.out.println("Qual a altura do cliente?")
+    double altura = leitor.nextDouble();
+    string.out.println("Qual o peso do cliente?");
+    double altura = leitor.nextDouble();
+    leitor.nextLine();
+    }else if (tipo == 2) {
+        System.out.println("Qual o CNPJ da empressa");
+        string cnpj = leitor.nextString();
+        System.out.println("Qual o INSC Estadual da empressa");
+        string inscEstadual = leitor.nextString();
+        System.out.println("Em que ano a empressa foi fundada");
+        int anoFundacao = leitor.nexInt();
+    }
+
+    private static void mostrarDadosClientePessoa/Empressa() {
+
+    }
+    
