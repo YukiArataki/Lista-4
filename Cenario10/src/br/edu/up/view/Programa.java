@@ -117,7 +117,7 @@ public class Programa {
         } else {
             System.out.println("Seguro não encontrado.");
         }
-    }
+    } 
 
     private static void excluirTodosSeguros() {
         System.out.print("Tem certeza que deseja excluir todos os seguros? (S/N): ");
