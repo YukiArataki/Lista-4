@@ -3,13 +3,11 @@ package br.edu.up.modelos;
 public class Evento {
 
     private String nome;
-    private Int data; 
+    private Date data; 
     private String local;
     private String lotacaoMax;
     private String ingresosVend;
     private String ingresoPre;
-
-    
 
     public String getNome() {
         return nome;
@@ -17,10 +15,10 @@ public class Evento {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public Int getData() {
+    public Date getData() {
         return data;
     }
-    public void setData(Int data) {
+    public void setData(Date data) {
         this.data = data;
     }
     public String getLocal() {
