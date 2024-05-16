@@ -1,27 +1,20 @@
 package br.edu.up.modelos;
 
 public class ClientePessoa extends Cliente{
-
     private String CPF;
     private Double peso;
     private Double altura;
 
-    public String getCPF() {
-        return CPF;
-    }
-    public void setCPF(String cPF) {
-        CPF = cPF;
-    }
-    public Double getPeso() {
-        return peso;
-    }
-    public void setPeso(Double peso) {
+    public ClientePessoa(String nome, String telefone, String email,  Double valrEmprestado,  Double valrMaxCredito, String CPF, Double peso, Double altura){
+        super(nome, telefone, email, valrEmprestado, valrMaxCredito);
+        this.CPF = CPF;
         this.peso = peso;
-    }
-    public Double getAltura() {
-        return altura;
-    }
-    public void setAltura(Double altura) {
         this.altura = altura;
     }
+
+    @Override
+    public String obterInformacoes(){
+      return "Nome: " + getNome() + ", Telefone: " + getTelefone() + ", E-mail: " + getEmail() + ", Valor Emprestado: " + getValrEmprestado() + ", Valor Maximo de Credito: " + getValrMaxCredito() + ", CPF: " + CPF + ", Peso" + peso + ", Altura" + altura;
+    }
+
 }

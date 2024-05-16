@@ -8,6 +8,10 @@ public class Cliente {
     private Endereco endereco;
     private Double valrMaxCredito;
     private Double valrEmprestado;
+
+    public Cliente(String nome, String telefone, String email, Double valrMaxCredito,  Double valrEmprestado){
+
+    }
     
     public String getNome() {
         return nome;

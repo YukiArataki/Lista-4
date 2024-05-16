@@ -3,25 +3,18 @@ package br.edu.up.modelos;
 public class ClienteEmpresa extends Cliente{
     private String cnpj;
     private String inscEstadual;
-    private Int anoFundacao; 
+    private int anoFundacao; 
 
-    public String getCnpj() {
-        return cnpj;
-    }
-    public void setCnpj(String cnpj) {
+    public ClienteEmpresa(String nome, String telefone, String email,  Double valrEmprestado,  Double valrMaxCredito, String cnpj, String  inscEstadual, int anoFundacao){
+        super(nome, telefone, email, valrEmprestado, valrMaxCredito);
         this.cnpj = cnpj;
-    }
-    public String getInscEstadual() {
-        return inscEstadual;
-    }
-    public void setInscEstadual(String inscEstadual) {
-        this.inscEstadual = inscEstadual;
-    }
-    public String getAnoFundacao() {
-        return anoFundacao;
-    }
-    public void setAnoFundacao(String anoFundacao) {
+        this.inscEstadual= inscEstadual;
         this.anoFundacao = anoFundacao;
+
     }
 
+    @Override
+    public String obterInformacoes() {
+        return "Nome: " + getNome() + ", Telefone: " + getTelefone() + ", E-mail: " + getEmail() + ", Valor Emprestado: " + getValrEmprestado() + ", Valor Maximo de Credito: " + getValrMaxCredito() + "Cnpj: " + cnpj + ", Insc Estadual" + inscEstadual + ", Ano de Fundação: " + anoFundacao;
+    }
 }
