@@ -4,5 +4,5 @@ import br.edu.up.controles.academico;
 
 public class Menu{
      
-    Scanner leitor = new Scanner(S)
+    Scanner leitor = new Scanner(System.in)
 }
